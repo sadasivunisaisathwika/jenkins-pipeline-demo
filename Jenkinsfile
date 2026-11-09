@@ -12,21 +12,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building application...'
-                bat 'mvn clean compile'
+              bat '"C:\\Users\\SATHWIKA\\maven\\apache-maven-3.9.16\\bin\\mvn.cmd" clean compile'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                bat 'mvn test'
+                bat '"C:\\Users\\SATHWIKA\\maven\\apache-maven-3.9.16\\bin\\mvn.cmd" test'
             }
         }
 
         stage('Package') {
             steps {
-                echo 'Packaging application...'
-                bat 'mvn package'
+                echo 
+bat '"C:\\Users\\SATHWIKA\\maven\\apache-maven-3.9.16\\bin\\mvn.cmd" package'
             }
         }
     }
